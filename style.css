@@ -15,17 +15,16 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-padding-top: 80px;
+}
+
 body {
     overflow-x: hidden;
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
-
-/* body > *:not(.banner):not(.header) {
-    max-width: 700px;
-    margin: auto;
-} */
 
 h1,
 h2 {
@@ -100,7 +99,7 @@ a {
     position: absolute;
     align-content: center;
     top: 0;
-    right: 30px;
+    right: 7vw;
     height: 80px;
     font-size: 28px;
     color: var(--rosso-sagra);
@@ -115,7 +114,7 @@ a {
     position: fixed;
     top: 0;
     right: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 
     background-color: var(--light-color);
 
@@ -128,7 +127,7 @@ a {
 .nav-content {
     width: 100vw;
     padding-top: 120px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .nav-content ul {
     display: flex;
@@ -162,7 +161,7 @@ a {
 /* MENU */
 
 .menu-content {
-    padding: 50px 30px;
+    padding: 50px 7vw;
     padding-bottom: 0;
 }
 .menu-content h1 {
@@ -181,7 +180,7 @@ a {
 }
 
 .categoria-content {
-    padding: 20px;
+    padding: 30px 0;
 }
 
 .piatto {
@@ -192,6 +191,11 @@ a {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.piatto .prezzo {
+    flex-shrink: 0;
 }
 .piatto .prezzo:not(.no-euro):before {
     content: '€ ';
@@ -224,4 +228,13 @@ a {
     color: var(--light-color);
     text-align: center;
     align-content: center;
+}
+
+
+
+/* DIVIDER */
+
+.divider {
+    width: 100%;
+    border-bottom: 2px solid var(--rosso-sagra);
 }
