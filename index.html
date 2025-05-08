@@ -3,13 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Menù - El Bareto</title>
-    <link rel="shortcut icon" href="img/LOGHI ElBareto-03-casetta.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Menù - Parè Festa Paesana</title>
 </head>
 <body>
-    <script>
-        window.location.replace("https://parefestapaesana.github.io/");
-    </script>
+    
+    <div class="banner">Scopri il <a href="programma.html">programma completo</a></div>
+
+    <div id="header" class="header">
+        <!-- <div class="banner">Scopri il programma completo</div> -->
+
+        <div class="logo"><a href="index.html"><img src="img/logo.JPG" alt="" srcset=""></a></div>
+
+        <div id="hamburger" class="hamburger"><i class="fas fa-bars"></i></div>
+        <div id="close-header" class="hamburger hidden"><i class="fas fa-times"></i></div>
+    </div>
+
+    <div id="navigation" class="navigation">
+        <div class="nav-content">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a class="nav-link" href="index.html#menu">Menù</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#vini">Carta dei vini</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#dolci">Dolci di casa</a></li>
+                <li class="nav-item"><a class="nav-link" href="programma.html">Programma completo</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-content" data-bs-spy="scroll" data-bs-target="#navigation">
+
+        <div id="menu" class="menu-content">
+
+            <h1>Parè Festa Paesana</h1>
+            <h2 style="margin-bottom: 30px;">- Menù Venerdì <span style="display: inline-block;">9 Maggio -</span></h2>
+
+            <div class="categoria">
+                <div class="categoria-titolo"><h3>Piatto del giorno</h3></div>
+
+                <div class="categoria-content">
+                    <div class="piatto"><p>Grigliata di pesce <span class="prezzo">19,00</span></p></div>
+                </div>
+            </div>
+
+            <div class="categoria">
+                <div class="categoria-titolo"><h3>Primi piatti</h3></div>
+
+                <div class="categoria-content">
+                    <div class="piatto"><p>Gnocchetti al ragù <span class="prezzo">5,00</span></p></div>
+                    <div class="piatto"><p>Gnocchetti al sugo d’anatra <span class="prezzo">5,50</span></p></div>
+                    <div class="piatto"><p>Pasta al ragù <span class="prezzo">5,00</span></p></div>
+                    <div class="piatto"><p>Pasta al sugo d’anatra <span class="prezzo">5,50</span></p></div>
+                </div>
+            </div>
+
+            <div class="categoria">
+                <div class="categoria-titolo"><h3>Secondi piatti</h3></div>
+
+                <div class="categoria-content">
+                    <div class="piatto"><p>Formajo scotà co poenta <span class="prezzo">6,00</span></p></div>
+                    <div class="piatto"><p>Petto di pollo con patate fritte <span class="prezzo">7,50</span></p></div>
+                    <div class="piatto"><p>Wurstel con patate fritte <span class="prezzo">6,00</span></p></div>
+                    <div class="piatto"><p>Originale Pastin d’Alpago <span class="prezzo">7,00</span></p></div>
+                    <div class="piatto"><p>Roast Beef <span class="prezzo">9,00</span></p></div>
+                </div>
+            </div>
+
+            <div class="categoria">
+                <div class="categoria-titolo"><h3>Contorni</h3></div>
+
+                <div class="categoria-content">
+                    <div class="piatto"><p>Patatine Fritte <span class="prezzo">3,50</span></p></div>
+                    <div class="piatto"><p>Funghi misti <span class="prezzo">3,50</span></p></div>
+                    <div class="piatto"><p>Fagioli al prezzemolo <span class="prezzo">3,50</span></p></div>
+                    <div class="piatto"><p>Fagioli con cipolla <span class="prezzo">3,50</span></p></div>
+                    <div class="piatto"><p>Carote <span class="prezzo">3,50</span></p></div>
+                    <div class="piatto"><p>Insalata mista <span class="prezzo">3,50</span></p></div>
+                    <div class="piatto"><p>Polenta extra <span class="prezzo no-euro">-</span></p></div>
+                </div>
+            </div>
+            
+            <div class="categoria">
+                <div class="categoria-titolo"><h3>Bevande</h3></div>
+
+                <div class="categoria-content">
+                    <div class="piatto"><p>Ombra bianco <span class="prezzo">1,00</span></p></div>
+                    <div class="piatto"><p>Ombra rosso <span class="prezzo">1,00</span></p></div>
+                    <div class="piatto"><p>Vino bianco ½ lt <span class="prezzo">3,00</span></p></div>
+                    <div class="piatto"><p>Vino rosso ½ lt <span class="prezzo">3,00</span></p></div>
+                    <div class="piatto"><p><span><a href="#vini">Vino alla carta</a> in bottiglia</span><span class="prezzo no-euro">(Chiedere al Bar)</span></p></div>
+                    <div class="piatto"><p>Birra bionda (300 ml) <span class="prezzo">3,50</span></p></div>
+                    <div class="piatto"><p>Birra rossa (300 ml) <span class="prezzo">4,00</span></p></div>
+                    <div class="piatto"><p>Acqua minerale naturale ½ lt <span class="prezzo">1,00</span></p></div>
+                    <div class="piatto"><p>Acqua minerale frizzante ½ lt <span class="prezzo">1,00</span></p></div>
+                    <div class="piatto"><p>Lattina di Coca Cola <span class="prezzo">2,50</span></p></div>
+                    <div class="piatto"><p>Lattina di Fanta <span class="prezzo">2,50</span></p></div>
+                    <div class="piatto"><p>Thè al Limone <span class="prezzo">2,50</span></p></div>
+                    <div class="piatto"><p>Thè alla Pesca <span class="prezzo">2,50</span></p></div>
+                </div>
+            </div>
+
+            <div class="categoria">
+                <div class="categoria-titolo"><h3>Golosità</h3></div>
+
+                <div class="categoria-content">
+                    <div class="piatto"><p><span>Fetta di <a href="#dolci">dolce</a> al carrello</span> <span class="prezzo">3,50</span></p></div>
+                    <div class="piatto"><p>Caffè <span class="prezzo">1,00</span></p></div>
+                    <div class="piatto"><p>Sgroppino <span class="prezzo">2,50</span></p></div>
+                    <div class="piatto"><p>Limoncello <span class="prezzo">2,50</span></p></div>
+                    <div class="piatto"><p>Liquirizia <span class="prezzo">2,50</span></p></div>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- <h1 id="vini">Carta vini</h1> -->
+        <div id="vini"><img style="margin: 50px 0px 80px 0px;" src="img/CARTA_VINI.png" width="100%" alt=""></div>
+
+        <!-- <h1 id="dolci" style="padding-top: 100px;">Listino Dolci</h1> -->
+        <img id="dolci" style="padding: 0px 0 100px 0;" src="img/Listino_Dolci.png" width="100%" alt="">
+
+    </div>
+
+    <div class="footer">
+        <i class="far fa-copyright"></i> 2025 Parè Festa Paesana
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <script src="header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5b0f1e243d.js" crossorigin="anonymous"></script>
 </body>
 </html>
